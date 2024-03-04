@@ -4,23 +4,29 @@ module.exports = {
 		commonjs: true,
 		es2021: true,
 	},
-	extends: 'xo',
+	extends: "xo",
 	overrides: [
 		{
 			env: {
 				node: true,
 			},
 			files: [
-				'.eslintrc.{js,cjs}',
+				".eslintrc.{js,cjs}",
 			],
 			parserOptions: {
-				sourceType: 'script',
+				sourceType: "script",
 			},
 		},
 	],
 	parserOptions: {
-		ecmaVersion: 'latest',
+		ecmaVersion: "latest",
 	},
 	rules: {
+		ident: ["off"],
+		quotes: ["error", "double"],
+		"linebreak-style": ["off"],
+		semi: ["error", "always"],
+		max,statements,per,line: ["off"]
 	},
+
 };
