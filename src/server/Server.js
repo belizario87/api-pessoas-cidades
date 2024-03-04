@@ -1,9 +1,10 @@
 const express = require("express");
+const router = require("./routes")
 
 const server = express();
 
-server.get("/", (req, res) =>
-    {res.send("funcionando");
-});
+server.use(router);
+
+
 
 module.exports=server;
